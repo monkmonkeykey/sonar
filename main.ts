@@ -1,21 +1,16 @@
 input.onButtonPressed(Button.A, function () {
     music.setVolume(127)
 })
-input.onButtonPressed(Button.AB, function () {
+input.onButtonPressed(Button.B, function () {
     music.setVolume(0)
 })
 function servo2 () {
     pins.servoWritePin(AnalogPin.P2, servo)
-    serial.writeString("50,distance." + makerbit.getUltrasonicDistance(DistanceUnit.CM) + "")
 }
 let servo = 0
-serial.setBaudRate(BaudRate.BaudRate115200)
-serial.redirectToUSB()
 let contador = 0
 servo = 0
 makerbit.connectUltrasonicDistanceSensor(DigitalPin.P1, DigitalPin.P0)
-serial.writeLine(".")
-serial.writeLine("50,distance." + makerbit.getUltrasonicDistance(DistanceUnit.CM) + "")
 loops.everyInterval(20, function () {
     led.plotBarGraph(
     servo,

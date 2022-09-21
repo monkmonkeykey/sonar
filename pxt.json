@@ -5,7 +5,11 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "MakerBit-Ultrasonic": "github:1010technologies/pxt-makerbit-ultrasonic#v1.0.8"
+        "MakerBit-Ultrasonic": "github:1010technologies/pxt-makerbit-ultrasonic#v1.0.8",
+        "Soroban": "github:aorczyk/soroban#v1.0.11",
+        "i2cLCD1602": "github:makecode-extensions/i2clcd1602#v1.5.0",
+        "pxt-esp8266_thingspeak": "github:alankrantas/pxt-esp8266_thingspeak#v0.0.3",
+        "pxt-esp8266": "github:cytrontechnologies/pxt-esp8266#v1.1.4"
     },
     "files": [
         "main.blocks",
